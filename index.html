@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "2rem",
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        color: white;
+      }
+      .lb-nav a.lb-prev {
+        
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div class="title py-6 text-center">
+      <div class="container">
+        <h1 class="text-[5rem] font-bold">Light<span class="text-[#fb331c]">Box</span></h1>
+      </div>
+    </div>
+
+    <div class="lightBox">
+      <div class="container">
+        <div
+          class="lightBoxWrapper md:grid md:grid-cols-3 gap-5 [&>div>a>img]:mb-4"
+        >
+
+        <div class="lightAlbum border-2 h-[591px] overflow-hidden">
+
+            <div class="lightBoxItem">
+            <a href="https://i.pinimg.com/1200x/75/51/29/7551290d73f2a8ecd35bd25b912b79d1.jpg" data-lightbox="graphic"
+              ><img
+                class="h-full w-full object-cover"
+                src="https://i.pinimg.com/1200x/75/51/29/7551290d73f2a8ecd35bd25b912b79d1.jpg"
+                alt=""
+            /></a>
+          </div>
+
+          <div class="lightBoxItem">
+            <a href="https://fahrenheitmagazine.b-cdn.net/sites/default/files/styles/xl/public/field/image/maxime_portada_1.jpg" data-lightbox="graphic"
+              ><img
+                class="h-full w-full object-cover"
+                src="https://fahrenheitmagazine.b-cdn.net/sites/default/files/styles/xl/public/field/image/maxime_portada_1.jpg"
+                alt=""
+            /></a>
+          </div>
+
+          <div class="lightBoxItem">
+            <a href="https://fahrenheitmagazine.b-cdn.net/sites/default/files/inside-the-note/pictures/2022/06/29/maxime_portada_2.jpg" data-lightbox="graphic"
+              ><img
+                class="h-full w-full object-cover"
+                src="https://fahrenheitmagazine.b-cdn.net/sites/default/files/inside-the-note/pictures/2022/06/29/maxime_portada_2.jpg"
+                alt=""
+            /></a>
+          </div>
+
+        </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'fitImagesInViewport': true,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
